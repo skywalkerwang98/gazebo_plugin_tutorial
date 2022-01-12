@@ -9,6 +9,7 @@ add_library(hello_world SHARED hello_world.cc)
 target_link_libraries(hello_world ${GAZEBO_LIBRARIES})
 
 add_library(factory SHARED factory.cc)
-target_link_libraries(factory
-  ${GAZEBO_LIBRARIES}
-)
+target_link_libraries(factory ${GAZEBO_LIBRARIES})
+
+add_library(world_edit SHARED world_edit.cc)
+target_link_libraries(world_edit ${GAZEBO_LIBRARIES})
